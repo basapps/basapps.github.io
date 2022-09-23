@@ -138,19 +138,63 @@ h1, h2 {
   display: none;
 }
 
-.app__header {
+.app__header1 {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.app__header2 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.app__header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app__header1 nav {
+  padding: 0 0 40px 0;
+}
+
+.app__header2 nav {
+  padding: 0;
+}
+
+.app__header nav a {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.app__header nav a.active {
+  text-decoration: underline;
+}
+
+.app__header nav a:first-child {
+  margin-right: 17px;
+}
+
+.app__header_ {
   display: flex;
   flex-direction: row;
-  margin-top: 128px;
-  margin-bottom: 128px;
   align-items: center;
 }
 
 @media (max-width: 768px) {
-  .app__header {
-    align-items: flex-start;
+  .app__header1 {
     margin-top: 32px;
     margin-bottom: 16px;
+  }
+
+  .app__header2 {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .app__header_ {
+    align-items: flex-start;
   }
 }
 
@@ -254,7 +298,7 @@ html[dir=rtl] .app__logo-wrapper {
 @media (max-width: 768px) {
   .app__buttons {
     margin-left: 0;
-    margin-bottom: 64px;
+    margin-bottom: 50px;
   }
 
   .app__buttons--mobile {
@@ -311,12 +355,12 @@ html[dir=rtl] .app__logo-wrapper {
 }
 
 .app__section {
-  margin-bottom: 128px;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 768px) {
   .app__section {
-    margin-bottom: 64px;
+    margin-bottom: 50px;
   }
 
   .app__section-title2 {
@@ -357,14 +401,13 @@ html[dir=rtl] .app__logo-wrapper {
   color: #38b6ff;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 @media (max-width: 768px) {
   .footer__container {
     flex-direction: column-reverse;
-    align-items: flex-start;
   }
 
   .footer p:last-child {
